@@ -6,7 +6,7 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
-})->middleware('auth:sanctum');
+})->middleware('auth:sanctum')
 
 
 Route::post('/register', [AuthController::class, 'register']);
